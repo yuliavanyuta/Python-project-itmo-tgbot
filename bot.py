@@ -54,7 +54,7 @@ def handle_message(message):
     # Режим для сканирования рынка
     elif message.text == "Screener":
         screener = True
-        monitor_schedule(message, crypto_list, crypto_data, bot)
+        monitor_schedule(message, crypto_list, crypto_data, bot, screener)
         bot.send_message(message.chat.id, "Mode: Screener")
     # Выбор режима бота
     elif message.text == "Choose Mode":
