@@ -4,7 +4,6 @@ import time
 
 # Функция для мониторинга криптовалют
 def monitor_crypto(message, crypto_list, crypto_data, bot):
-    global screener
     # Если флаг Screener = True, то начинаем мониторинг
     if screener:
         for crypto in crypto_list:
